@@ -1,0 +1,20 @@
+
+
+<table class="table">
+    <tr>
+        <th scope="col">Dátum</th>
+        <th scope="col">Név</th>
+        <th scope="col">Fő</th>
+        <th scope="col">Helyszín</th>
+        <th scope="col">Irányítószám</th>
+
+    </tr>
+        <tr scope="col" *ngFor="let foglalasok of foglalasok">
+            <td>{{ foglalasok.datum }}</td>
+            <td>{{ foglalasok.nev }}</td>
+            <td>{{ foglalasok.fo }}</td>
+            <td>{{ foglalasok.hely }}</td>
+            <td>{{ foglalasok.iranyitoszam }}</td>
+            <td>{{ foglalasok.id }}</td>
+        </tr>
+    </table>

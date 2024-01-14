@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="">Foglalások listázása</a>
+              <a class="nav-link active" href="#">Új foglalás felvétele</a>
+
+              <div class="m-5 d-grid gap-2 col-6 mx-auto">
+                <a routerLink="/reslist" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link active" type="button">Foglalások listázása</a>    
+                <a routerLink="/resadd" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link active" type="button">Új foglalás felvétele</a>    
+              </div>
+              <router-outlet></router-outlet>
+              <router-outlet></router-outlet>
+              <!-- ez nem akar összejönni -->
+
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="header"><h1 class="text-center">Szabadulószoba</h1></div>
+     
+          <div class="first">
+            <h2>Felsőbb szintre emeltük a szabadulást</h2>
+                <p>Szabadulószoba Budapest szívében </p>
+                <p>Elérhető közelségbe hoztuk a professzionális menekülő szoba nyújtotta izgalmas, színvonalas kikapcsolódást a fővárosban és környékén lakóknak, 
+                    és persze a látogatóba, kikapcsolódásra érkezőknek, turistáknak is. Nagy hangsúlyt fektetünk arra, hogy nálunk ne csak a díszletek, 
+                    hanem a feladatok és az eszközök is az adott tematikába illőek legyenek (nem sütünk el olcsó trükköket). 
+                    A feladatok megalkotásánál mérnökök és biztonságtechnikai szakemberek voltak a segítségünkre abban, hogy a varázslat tényleg varázslat legyen. </p>
+                <p>Számos feladatnál egy izgalmas kalandregénybe vagy egy filmbe csöppenve érezhetitek magatokat. 
+                    Bármelyik helyszínt is választod, biztos lehetsz benne, hogy az az egyik legjobb szabaduló szoba Budapesten.</p>
+                
+                <img class="" src="https://meglepkek.hu/uploads/images/_cache/furesz3_4ac0c1952f55991adecf09a78a525cbe.jpg" alt="jatek">
+          </div>
+
+
+        
+        <div class="footer">Meggyesi Réka, SZOFT II/1/E, 2024-01-14</div>
+      </div>
+</body>
+</html>
